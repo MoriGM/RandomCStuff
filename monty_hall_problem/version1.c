@@ -18,7 +18,7 @@ int main(void)
 	}
 
 	printf("Right: %d and Wrong: %d\n", result[0], result[1]);
-	printf("You woud win %d%% times and lose %d%% times\n", ((result[0] * 100) / (result[0] + result[1])), ((result[1] * 100) / (result[0] + result[1])));
+	printf("You woud win %d%% times and lose %d%% times\n", ((result[0] * 100) / number), ((result[1] * 100) / number));
 	
 	return 0;
 }
