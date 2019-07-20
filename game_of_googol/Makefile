@@ -1,5 +1,5 @@
 PROG=version1 version2
-OBJS=version1.o version2
+OBJS=version1.o version2.o
 CC=gcc
 CFLAGS=-g -std=c11 -O3 -fPIC -Wall -Wextra
 
