@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include >
 #include <stdlib.h>
 #include <time.h>
 #include <stdint.h>
@@ -26,8 +26,7 @@ uint64_t powll(uint64_t a, uint64_t b)
 
 int main(int argc, char** argv)
 {
-	if (argc <= 1)
-		exit(1);
+	if (argc <= 2) exit(1);
 	x = atoi(argv[1]);
 	int cpu = atoi(argv[2]);
 

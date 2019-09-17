@@ -26,8 +26,7 @@ uint64_t powll(uint64_t a, uint64_t b)
 
 int main(int argc, char** argv)
 {
-	if (argc <= 1)
-		exit(1);
+	if (argc <= 2) exit(1);
 	x = strtol(argv[1], NULL, 10);
 	int cpu = atoi(argv[2]);
 
