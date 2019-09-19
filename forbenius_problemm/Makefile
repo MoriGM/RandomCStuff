@@ -1,8 +1,6 @@
 PROG=version1 version2 version3 version4
 OBJS=version1.o version2.o version3.o version4.o
 CC=gcc
-ASM=as
-LD=ld
 CFLAGS=-g -std=c11 -Wall -Wextra
 
 all: ${OBJS} ${PROG}
