@@ -25,6 +25,7 @@ int main(void)
 		for (unsigned int i = try_count;i < MAX_COUNT;i++) if (max < arr[i] && (my_max = arr[i])) break;
 
 		result[my_max == max_arr] += 1;
+		free(arr);
 	}
 	printf("Try's:%d Loses:%d Wins: %d\n", MAX_TEST, result[0], result[1]);
 	printf("You woud win %d%% times and lose %d%%\n", ((result[1] * 100) / MAX_TEST), ((result[0] * 100) / MAX_TEST));
