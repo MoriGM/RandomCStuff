@@ -54,3 +54,10 @@ dkms.conf
 # Vim
 *.swp
 *.swo
+
+# Output
+*/version1
+*/version2
+*/version3
+*/version4
+*/version5
