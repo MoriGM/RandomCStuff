@@ -8,11 +8,11 @@ powll:
 	jmp powll_LC100
 
 powll_LC0:
-	inc %r10
+	inc %rbx
 	mul %rdi
 
 powll_LC100:
-	cmp %rsi, %r10
+	cmp %rsi, %rbx
 	jb powll_LC0
 
 	pop %rbx	
