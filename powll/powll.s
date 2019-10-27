@@ -2,19 +2,18 @@
 .text
 
 powll:
-	push %rbx
+	push %rsi
 	mov $1, %rax
-	mov $0, %rbx
 	jmp powll_LC100
 
 powll_LC0:
-	inc %rbx
+	dec %rsi
 	mul %rdi
 
 powll_LC100:
-	cmp %rsi, %rbx
-	jb powll_LC0
+	cmp $0, %rsi
+	jne powll_LC0
 
-	pop %rbx	
+	pop %rsi	
 
 	ret
