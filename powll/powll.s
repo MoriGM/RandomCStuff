@@ -4,6 +4,8 @@
 powll:
 	push %rsi
 	mov $1, %rax
+	xor $0, %rsi
+
 	jmp powll_LC100
 
 powll_LC0:
@@ -11,8 +13,7 @@ powll_LC0:
 	mul %rdi
 
 powll_LC100:
-	cmp $0, %rsi
-	jne powll_LC0
+	jnz powll_LC0
 
 	pop %rsi	
 
