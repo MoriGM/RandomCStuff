@@ -16,14 +16,6 @@ int sinp(double d)
 
 }
 
-int cosp(double d)
-{
-	double s = cos(d * (PI / 180));
-	return (int) ((s * 100) * 0.8) + 80;
-
-}
-
-
 int main(void)
 {
 	while(true)
