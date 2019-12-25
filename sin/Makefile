@@ -1,4 +1,4 @@
-PROG=version1 version2 version3 version4 version5
+PROG=version1 version2 version3 version4 version5 version6
 CC=gcc
 CFLAGS= -g -std=c11 -O3
 
